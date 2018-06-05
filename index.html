@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+  integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <title>yandex maps parser</title>
+</head>
+<body>
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <form  action="parser.php" method="post">
+        <h3>Ввести название сферы интересующих организцаий</h3>
+        <input type="text" name="text_id" placeholder="поисковой запрос">
+        <br>
+        <h3>Ввести количество объектов для получения. По умолчанию 10</h3>
+        <input type="text" name="res_count" placeholder="количество организаций">
+        <br>
+        <h3>Ввести координаты интересующей области. Нижняя левая точка и правая верхняя точка.</h3>
+        <input type="text" name="cord_left" placeholder="нижняя левая точка">
+        <input type="text" name="cord_right" placeholder="правая верхняя точка">
+        <br><br>
+        <input type="submit" name="submit" value="Получить данные">
+      </form>
+    </div>
+  </div>
+</body>
+</html>
