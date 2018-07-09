@@ -7,7 +7,7 @@ if(isset($_POST['submit'])){
   $cord_left = trim($_POST['cord_left']);
   $cord_right = trim($_POST['cord_right']);
 
-    $contents = file_get_contents("https://search-maps.yandex.ru/v1/?text=$text_id&type=biz&lang=ru_RU&results=$res_count&bbox=$cord_left~$cord_right&apikey=033e03d2-4ee2-4469-86f9-c7a80ccd9d17");
+    $contents = file_get_contents("https://search-maps.yandex.ru/v1/?text=$text_id&type=biz&lang=ru_RU&results=$res_count&bbox=$cord_left~$cord_right&apikey=[yourApiKey]");
     // Преобразуем JSON в массив
     $members = json_decode($contents, true);
     $log = fopen('log.txt','a+');
